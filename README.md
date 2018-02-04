@@ -8,3 +8,6 @@ The directive assumes a service called 'UserInfoService' exists and is injected.
 ```html
 <button type="button" access-requirements="admin, super">Important Button</button>
 ```
+In that scenario only users who are members of the admin or super groups will have access to that button - for everyone else it will be disabled. 
+
+Remember - user interface interface security is no substitute for server side back end security.  This is only provided as an easy way create implied security in controls for real security that should be enabled elsewhere. 
