@@ -21,7 +21,7 @@
 			//ex let member_groups = window.sessionStorage.getItem('member_groups');
 			//as long as it provides an array of member group names the user is
 			//subscribed to.
-			let member_groups = userInfoService.getMemberGroups();
+			let member_groups = UserInfoService.getMemberGroups();
 
 			//parse the access requirement groups string
 			let REGEX = /\s*,\s*/
