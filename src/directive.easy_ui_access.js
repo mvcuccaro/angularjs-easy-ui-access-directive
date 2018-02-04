@@ -16,6 +16,11 @@
 			turnElementOff(element_type)
 
 			//get the groups the member is subscribed to
+			//in this example its provided as a function call BUT
+			//it could easily be pulled directly from the session 
+			//ex let member_groups = window.sessionStorage.getItem('member_groups');
+			//as long as it provides an array of member group names the user is
+			//subscribed to.
 			let member_groups = userInfoService.getMemberGroups();
 
 			//parse the access requirement groups string
