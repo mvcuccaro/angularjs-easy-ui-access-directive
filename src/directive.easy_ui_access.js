@@ -16,7 +16,7 @@
 			turnElementOff(element_type)
 
 			//get the groups the member is subscribed to
-			member_groups = userInfoService.getMemberGroups();
+			let member_groups = userInfoService.getMemberGroups();
 
 			//parse the access requirement groups string
 			let REGEX = /\s*,\s*/
