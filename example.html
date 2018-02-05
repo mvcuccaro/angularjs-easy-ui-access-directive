@@ -29,5 +29,24 @@
       <div><button type="button" access-requirements="admin, super">Important Button 2</button></div>
     </div>
 
+    <br><hr><br>
+
+    <div>
+      the following div and everything inside it will be "disabled" because the user is not subscribed to the correct group.<br>All pointer events will be disabled and the opacity will be lowered to make it visually clear the item is disabled.
+    </div>
+    <br>
+
+    <div access-requirements="super">
+      <table style="border:1px solid #000000;width:20%">
+        <tr>
+          <td>Name</td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>foo</td>
+          <td><a href="https://github.com/mvcuccaro/angularjs-easy-ui-access-directive">bar (should be an unclickable link)</a></td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
