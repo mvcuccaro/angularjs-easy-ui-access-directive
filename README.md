@@ -10,6 +10,8 @@ The directive assumes a service called 'UserInfoService' exists and is injected.
 ```
 In that scenario only users who are members of the admin or super groups will have access to that button - for everyone else it will be disabled.
 
+---
+
 From the provided example file:
 ```html
 <body ng-controller="mycontroller">
@@ -35,6 +37,8 @@ From the provided example file:
 ```
 
 ![alt text](https://raw.githubusercontent.com/mvcuccaro/angularjs-easy-ui-access-directive/003655821089b2ff86b32447e7ad0c892c912cd4/screenshots/angular-easy-ui-access-directive-screenshot.png)
+
+---
 
 The directive also supports disabling an entire div. This can be especially useful if you want to disable an entire angular directive companent. since angular doesnt allow 2 directives in a single element - you can simply wrap a div around it and add the access requirements directive. 
 
