@@ -18,15 +18,15 @@
     </div>
 
     <div>
-      <div>Important Button 1 requires any of the following groups: {{ important_button_1_access_requirements }}</div>
+      <div>Important Button 1 requires any of the following groups: super, developer</div>
       <br>
-      <div><button type="button" access-requirements="{{ important_button_1_access_requirements }}">Important Button</button></div>
+      <div><button type="button" access-requirements="super, developer">Important Button</button></div>
     </div>
     <br><hr><br>
     <div>
-      <div>Important Button 2 requires any of the following groups: {{ important_button_2_access_requirements }}</div>
+      <div>Important Button 2 requires any of the following groups: admin, super</div>
       <br>
-      <div><button type="button" access-requirements="{{ important_button_2_access_requirements }}">Important Button 2</button></div>
+      <div><button type="button" access-requirements="admin, super">Important Button 2</button></div>
     </div>
 
   </body>
