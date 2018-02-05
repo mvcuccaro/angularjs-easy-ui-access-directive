@@ -36,4 +36,27 @@ From the provided example file:
 
 ![alt text](https://raw.githubusercontent.com/mvcuccaro/angularjs-easy-ui-access-directive/003655821089b2ff86b32447e7ad0c892c912cd4/screenshots/angular-easy-ui-access-directive-screenshot.png)
 
+The directive also supports disabling an entire div. This can be especially useful if you want to disable an entire angular directive companent. since angular doesnt allow 2 directives in a single element - you can simply wrap a div around it and add the access requirements directive. 
+
+```html
+<div>
+      the following div and everything inside it will be "disabled" because the user is not subscribed to the correct group.<br>All pointer events will be disabled and the opacity will be lowered to make it visually clear the item is disabled.
+    </div>
+    <br>
+    <div access-requirements="super">
+      <table style="border:1px solid #000000;width:20%">
+        <tr>
+          <td>Name</td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td>foo</td>
+          <td><a href="https://github.com/mvcuccaro/angularjs-easy-ui-access-directive">bar (should be an unclickable link)</a></td>
+        </tr>
+      </table>
+    </div>
+```
+
+![alt text](https://raw.githubusercontent.com/mvcuccaro/angularjs-easy-ui-access-directive/master/screenshots/angular-easy-ui-access-directive-screenshot_2.png)
+
 Remember - user interface interface security is no substitute for server side back end security.  This is only provided as an easy way create implied security in controls for real security that should be enabled elsewhere. 
