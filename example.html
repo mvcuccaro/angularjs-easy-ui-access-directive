@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script type="text/javascript">
+      angular.module('app', []);
+    </script>
+    <script src="src/example.user_info_service.js"></script>
+    <script src="src/directive.easy_ui_access.js"></script>
+    <script src="example.controller.js"></script>
+  </head>
+  <body ng-controller="mycontroller">
+    <div>
+      The user is subscribed to the following groups:
+      <ul>
+          <li ng-repeat="group in member_groups">{{ group }}</li>
+      </ul>
+    </div>
+
+    <div>
+      <div>Important Button 1 requires any of the following groups: {{ important_button_1_access_requirements }}</div>
+      <br>
+      <div><button type="button" access-requirements="{{ important_button_1_access_requirements }}">Important Button</button></div>
+    </div>
+    <br><hr><br>
+    <div>
+      <div>Important Button 2 requires any of the following groups: {{ important_button_2_access_requirements }}</div>
+      <br>
+      <div><button type="button" access-requirements="{{ important_button_2_access_requirements }}">Important Button 2</button></div>
+    </div>
+
+  </body>
+</html>
