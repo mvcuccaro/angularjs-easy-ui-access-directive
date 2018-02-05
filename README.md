@@ -10,6 +10,8 @@ The directive assumes a service called 'UserInfoService' exists and is injected.
 ```
 In that scenario only users who are members of the admin or super groups will have access to that button - for everyone else it will be disabled.
 
+The directive supports disabling buttons, disabling and setting read only to inputs, selects and textareas.  It also provides disabling a div and any clickable components inside it.
+
 ---
 
 From the provided example file:
